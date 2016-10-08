@@ -2,7 +2,7 @@
 
 // PARAMETRI DA MODIFICARE
 $WEBHOOK_URL = 'https://unisalsp1.herokuapp.com/execute.php';
-$BOT_TOKEN = '283578581:AAHnKBT4tP7xx7MA_rHMzSniGKmQBdRwiEE';
+$BOT_TOKEN = '283578581:AAFBKAQ-YPS0VTK52OduH9e6r-5RfUEgc6Q';
 
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
 $API_URL = 'https://api.telegram.org/bot' . $BOT_TOKEN .'/';

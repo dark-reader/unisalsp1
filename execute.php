@@ -20,14 +20,24 @@ $text = trim($text);
 $text = strtolower($text);
 
 header("Content-Type: application/json");
-$parameters = array('chat_id' => $chatId, "text" => $text);
-$parameters["method"] = "sendMessage";
-echo json_encode($parameters);
 
-if($text == 'ciao'){
- +    header("Content-Type: application/json");
-$parameters = array('chat_id' => $chatId, "text" => $lol);
+if(strpos($text, "/start") === 0 || $text=="ciao")
+{
+	$response = "Ciao $firstname, benvenuto!";
+}
+elseif($text=="Orario lezioni (pdf)")
+{
+	$response = "https://easycourse.unisalento.it/Orario/CCdL_Polo_Urbano/2016-2017/896/Curricula/Scienzepoliticheedellerelazioniinternazionali_LaureatriennaleDM270_1_Unico_SP.pdf";
+}
+elseif($text=="domanda 2")
+{
+	$response = "risposta 2";
+}
+else
+{
+	$response = "Comando non valido!";
+}
+$parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
- +} 
 

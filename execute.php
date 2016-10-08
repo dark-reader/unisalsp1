@@ -25,7 +25,7 @@ if(strpos($text, "/start") === 0 || $text=="ciao")
 {
 	$response = "Ciao $firstname, benvenuto!";
 }
-elseif($text=="Orario lezioni (pdf)")
+elseif($text=="Orario")
 {
 	$response = "https://easycourse.unisalento.it/Orario/CCdL_Polo_Urbano/2016-2017/896/Curricula/Scienzepoliticheedellerelazioniinternazionali_LaureatriennaleDM270_1_Unico_SP.pdf";
 }

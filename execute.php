@@ -24,7 +24,3 @@ $parameters = array('chat_id' => $chatId, "lol" => $text);
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
 
-
-if($text == 'ciao'){
-    file_get_contents($website."/sendmessage?chat_id=".$chatid."&text=lol");
-} 
